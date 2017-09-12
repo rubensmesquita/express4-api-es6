@@ -1,0 +1,33 @@
+{
+  "name": "api-rest2017",
+  "version": "1.0.0",
+  "description": "APi restFul - application 2017",
+  "main": "dist",
+  "scripts": {
+    "dev": "nodemon -w app --exec \"babel-node app --presets es2015,es2016,es2017,stage-3\"",
+    "build": "babel app -s -D -d dist --presets es2015,es2016,es2017,stage-3",
+    "start": "node dist",
+    "prestart": "npm run -s build && node index"
+  },
+  "author": "Rubens Mesquita",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.18.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "nconf": "^0.8.4",
+    "socket.io": "^2.0.3",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "nodemon": "^1.12.0"
+  }
+}
