@@ -30,9 +30,9 @@ async.series([
     }
 ], function(err) {
     if (err) {
-      logger.error('[APP] initialization failed', err);
+      logger.error('[APP] initialization failed', err)
     } else {
-      logger.info('[APP] initialized SUCCESSFULLY');
+      logger.info('[APP] initialized SUCCESSFULLY')
     }
   }
 )
